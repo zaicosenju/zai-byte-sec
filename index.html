@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zai./Byte - Keamanan Cyber Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">zai./byte</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Beranda</a>
+                <a href="#about" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Tentang Developer</a>
+                <a href="#threats" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Ancaman Cyber</a>
+                <a href="#tips" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Tips Keamanan</a>
+                <a href="#contact" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Kontak</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-700" onclick="toggleMenu()">☰</button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg px-6 pb-4">
+            <a href="#hero" class="block py-2 text-slate-700 hover:text-blue-600">Beranda</a>
+            <a href="#about" class="block py-2 text-slate-700 hover:text-blue-600">Tentang Developer</a>
+            <a href="#threats" class="block py-2 text-slate-700 hover:text-blue-600">Ancaman Cyber</a>
+            <a href="#tips" class="block py-2 text-slate-700 hover:text-blue-600">Tips Keamanan</a>
+            <a href="#contact" class="block py-2 text-slate-700 hover:text-blue-600">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="gradient-bg text-white py-32 px-6">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Keamanan Cyber dengan zai./byte</h2>
+            <p class="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
+                Temukan panduan praktis untuk melindungi data dan sistem Anda di dunia digital. Dikembangkan oleh ahli dengan pengalaman di bidang keamanan siber.
+            </p>
+            <button onclick="scrollToSection('about')" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 shadow-lg">
+                Pelajari Lebih Lanjut
+            </button>
+        </div>
+        <!-- Hero Image -->
+        <div class="container mx-auto mt-16 px-6">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8332d54d-7a84-4c6e-873c-8d1b5e5cc3ad.png" alt="Vast futuristic cyberspace landscape with glowing network nodes, secure firewalls as barriers, encrypted data streams flowing through transparent tunnels, and a central developer console displaying code for cyber defense" class="rounded-xl shadow-2xl mx-auto w-full h-auto fade-in" />
+        </div>
+    </section>
+
+    <!-- About Developer Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-5xl fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Tentang Developer - zai./byte</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63a62e24-bd8c-4ac4-917a-db68cd3157dc.png" alt="Portrait of a professional cybersecurity developer with glasses, surrounded by holographic screens displaying code, firewalls, and data protection icons in a sleek office environment" class="rounded-full shadow-lg w-full h-auto" />
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <p class="text-lg leading-relaxed mb-6">
+                        zai./byte adalah developer spesialis keamanan cyber dengan pengalaman lebih dari 10 tahun di industri teknologi. Saya berkomitmen untuk menyebarkan edukasi tentang praktik keamanan yang efektif untuk melindungi individu dan bisnis dari ancaman digital.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Melalui situs ini, saya berbagi pengetahuan tentang ancaman umum, tips pencegahan, dan alat-alat terbaru untuk membangun dunia digital yang lebih aman.
+                    </p>
+                    <div class="mt-8 flex space-x-4">
+                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">🎯 Spesialis Cyber Security</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">🛠️ Pengembang Aplikasi Aman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threats Section -->
+    <section id="threats" class="py-20 px-6 bg-slate-50">
+        <div class="container mx-auto max-w-6xl fade-in">
+            <h2 class="text-4xl font-bold text-center mb-16 text-slate-800">Ancaman Cyber Umum</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d828d057-f265-4534-a093-10424cb92d92.png" alt="Visual representation of phishing attack with an email icon opening to reveal a hook and fake website, overlaying a secure lock that is being cracked open" class="rounded-lg w-full h-auto" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Phishing</h3>
+                    <p class="text-slate-600 leading-relaxed">Teknik penipuan melalui email atau situs palsu untuk mencuri informasi sensitif seperti kredensial login.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/65f41e4f-606c-4c6e-a9a2-2c142ea841a1.png" alt="Detailed illustration of malware as aggressive digital monsters infecting a computer network, with viruses, worms, and ransomware chains wrapping around devices" class="rounded-lg w-full h-auto" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Malware</h3>
+                    <p class="text-slate-600 leading-relaxed">Perangkat lunak berbahaya yang bisa merusak sistem, mencuri data, atau memaksa pembayaran.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8fe70f8e-9694-46fd-868d-0689e57b9279.png" alt="Dynamic scene of DDoS attack showing a flood of digital traffic overwhelming a server tower with cracks appearing, alarm icons flashing, and protective barriers being breached" class="rounded-lg w-full h-auto" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">DDoS</h3>
+                    <p class="text-slate-600 leading-relaxed">Serangan yang membanjiri target dengan trafik untuk membuat layanan tidak dapat diakses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-5xl fade-in">
+            <h2 class="text-4xl font-bold text-center mb-16 text-slate-800">Tips Keamanan Praktis</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="md:w-1/3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/15ea0724-cfe4-4365-950b-602a23fca90a.png" alt="Iconic symbol of a strong digital lock with complex patterns, layers of encryption, and a key-grip hand firmly holding it to represent secure password practices" class="rounded-full w-full h-auto shadow-lg" />
+                    </div>
+                    <div class="md:w-2/3 mt-6 md:mt-0">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Gunakan Kata Sandi Kuat dan Unik</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed">Kombinasikan minimal 12 karakter dengan huruf campur, angka, dan simbol. Hindari menggunakan kata sandi yang sama di beberapa akun.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse">
+                    <div class="md:w-1/3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ec1f8e06-7500-44cf-a90d-b6ebc6f4ca92.png" alt="Animated graphic of software updates flowing like upgrades on a device screen, with gears turning and checkmarks appearing as systems become fortified" class="rounded-full w-full h-auto shadow-lg" />
+                    </div>
+                    <div class="md:w-2/3 mt-6 md:mt-0">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Selalu Perbarui Perangkat Lunak</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed">Aktifkan pembaruan otomatis untuk OS, aplikasi, dan antivirus. Pembaruan seringkali patch kerentanan keamanan.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="md:w-1/3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/476444f3-6607-43c8-b8b2-3b93877fe382.png" alt="Concept of privacy protection with a cloak of invisibility over personal data files, shields blocking unauthorized access, and a secure data vault" class="rounded-full w-full h-auto shadow-lg" />
+                    </div>
+                    <div class="md:w-2/3 mt-6 md:mt-0">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Lindungi Privasi Data Anda</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed">Gunakan VPN saat koneksi publik, hindari berbagi info pribadi di situs tidak terpercaya, dan aktifkan autentikasi dua faktor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 gradient-bg text-white">
+        <div class="container mx-auto max-w-4xl text-center fade-in">
+            <h2 class="text-4xl font-bold mb-8">Hubungi zai./byte</h2>
+            <p class="text-xl mb-12 leading-relaxed">
+                Punya pertanyaan tentang keamanan cyber? Mari kita diskusi untuk solusi yang tepat.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <a href="mailto:contact@zai.byte" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors duration-300">Kirim Email</a>
+                <a href="#" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors duration-300">Kunjungi Profil LinkedIn</a>
+            </div>
+            <div class="mt-12">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/44164cf1-cf3b-4a0e-adff-c643bbdc09d0.png" alt="Interactive contact interface with message bubbles, contact forms, and cybersecurity icons like shields and locks, set against a professional network backdrop" class="rounded-xl shadow-lg mx-auto w-full h-auto" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-10 px-6">
+        <div class="container mx-auto text-center">
+            <p class="mb-6">© 2023 zai./byte. Dibuat dengan ❤️ untuk keamanan cyber.</p>
+            <p>Tidak ada data pribadi yang dikumpulkan. Untuk pertanyaan privasi, hubungi developer.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
